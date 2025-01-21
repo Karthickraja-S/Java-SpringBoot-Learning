@@ -13,3 +13,9 @@ U cant direclty create project as u created in eclipse in community version. It 
 
 However to use in community version , go to start.spring.io, give all the details , download zip file and open in IntelliJ , now u can run Spring Boot project
 in community version.
+
+
+Why spring : 
+1. When we use tomcat and JSP , Servlets to deploy and start a web app, we face many dependency issues taking all jar files including in web.xml
+and more code for JDBC connection and etc.,
+2. To minimise all those stuff , spring fw arrives. ( To resolve dependency issues , maven is there && to reduce boiler plate code spring FW is there )
