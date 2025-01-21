@@ -1,0 +1,8 @@
+IOC : Inversion Of Control
+
+1. Inverting the control to the spring fw like creation of objects , destroying it, maintaining it, thereby we can focus on our business logic.
+So Spring has IoC container which manages all those stuff..
+
+DI : Dependency Injection
+
+Injecting the dependency to your class. Say You have a class Employee which needs a dependency of Address Object. So the Address Dependency need to inject to the Employee class. This is DI

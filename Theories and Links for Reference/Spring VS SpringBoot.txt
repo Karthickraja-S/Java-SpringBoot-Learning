@@ -1,0 +1,6 @@
+In order to print Hello World using spring, we need to do lot of stuff ( including pom.xml, structuring the folder structure , etc.. ) meaning a lot of effort is needed. 
+
+In order to resolve the above and reduce time constraint spring boot arrives, It helps u to create a templatefull project and u can directly code your project straightly ensuring all dependency and configuration quickly.
+
+Spring - Framework
+SpringBoot - Top of Spring FW that comes with configurations.
