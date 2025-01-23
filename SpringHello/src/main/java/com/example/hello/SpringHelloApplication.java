@@ -30,6 +30,12 @@ public class SpringHelloApplication {
 		Hello objHello2 = context.getBean(Hello.class);
 		objHello2.sayHello("Karthick");
 		// The above code returns i as 2  ( MEANING -> only one object is created and returning those objects )
+
+		// what if u need different objects
+		// https://www.javaguides.net/2018/10/spring-scope-annotation-with-prototype.html
+		// Also, we can even specify name in component annotation and we can get those bean in autowired with Qualifier
+		annotation - https://www.javaguides.net/2018/06/spring-qualifier-annotation-example.html
+		// The above will have Constructor based DI , setter based DI
 		
 		
 	}
