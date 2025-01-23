@@ -8,6 +8,9 @@ import org.springframework.context.ApplicationContext;
 public class SpringHelloApplication {
 
 	public static void main(String[] args) {
+
+		// https://www.geeksforgeeks.org/singleton-and-prototype-bean-scopes-in-java-spring/
+
 		
 		ApplicationContext context = SpringApplication.run(SpringHelloApplication.class, args);
 		System.out.println("Hello World !! ");
