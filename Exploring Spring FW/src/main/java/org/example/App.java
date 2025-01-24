@@ -38,5 +38,8 @@ public class App
 
         // U can also verify from
         // https://github.com/navinreddy20/spring6-course/tree/main/2%20Exploring%20Spring%20Framework
+
+        // Java Based Config ( no XMLs ) - https://github.com/navinreddy20/spring6-course/tree/main/3.1%20Working%20with%20Java-Based%20Config%20(3.1%20to%203.9)
+        // Where they used a java class like a xml mapping creating new ApplicationContext by AnnotationConfigApplicationContext(<class-name>.class);
     }
 }
