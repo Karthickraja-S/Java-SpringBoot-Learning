@@ -1,0 +1,44 @@
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="
+        http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <!-- If scope is not specified, then it makes singleton pattern. -->
+    <bean id="empObj" class="org.model.Employee" scope="prototype" primary="true">
+        <property name="name" value="Karthick" ></property>
+    </bean>
+
+    <bean id="empObj2" class="org.model.Employee" scope="prototype">
+        <property name="name" value="Sundararaj" ></property>
+        <!-- IF we need to specify some object to the constructor args or to the instance variable of a class , need to use ref key instead of value -->
+        <!-- and the value will be of bean id -->
+        <property name="age" value="1" ></property>
+    </bean>
+
+    <!--		<constructor-arg value="21"></constructor-arg>
+                <constructor-arg ref="addObj"></constructor-arg> -->
+
+    <!--		<constructor-arg type="org.model.Address" ref="adrs"/>
+                <constructor-arg type="int" value="21"/>
+                <constructor-arg type="String" value="Karthick" /> -->
+
+    <!-- MOSTLY USED ONE
+    		    <constructor-arg index="0" value="Karthick"/>
+                <constructor-arg index="1" value="21"/>
+                <constructor-arg index="2" ref="adrs"/> -->
+
+    <!--		<constructor-arg name="address" ref="adrs"/>
+                <constructor-arg name="age" value="21"/> -->
+
+
+    <bean id="parameterizedObj" class="org.model.Employee">
+        <constructor-arg type="int" value="21" ></constructor-arg>
+        <constructor-arg type="String" value="Karthick" ></constructor-arg>
+        <constructor-arg type="org.model.Address" ref="adrs"></constructor-arg>
+    </bean>
+
+    <bean id="adrs" class="org.model.Address" >
+        <property name="city" value="Theni"></property>
+    </bean>
+
+</beans>
