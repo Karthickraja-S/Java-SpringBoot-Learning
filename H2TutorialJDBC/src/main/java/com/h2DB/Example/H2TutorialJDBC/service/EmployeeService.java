@@ -16,7 +16,11 @@ public class EmployeeService {
         return repository;
     }
 
-    // The below one is Field Injection.
+    // what if we have constructor of EmployeeService which accepts EmployeeRepository object and 
+    // if we have autowired above to the constructor, then it is called as Constructor Injection
+    
+
+    // The below one is Setter Injection.
     @Autowired
     public void setRepository(EmployeeRepository repository) {
         this.repository = repository;
