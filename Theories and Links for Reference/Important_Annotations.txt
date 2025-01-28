@@ -1,0 +1,39 @@
+1. @Component 
+    ->  When we specify this annotation, spring itself handles creation of object in the container. But as a singleton if scope is not defined.
+If the object need to be created when we neeed to use, then annotate with @Lazy
+
+2. @Service 
+    ->  It is put on a service class to indicate it is a service class from a controller and internally it calls component annotation.
+
+3. @Repository 
+    ->  It is put on a repository class that fetches data from the DB. It is a best practice to include the repository,service annotations for better understanding.
+
+4. @Autowired 
+    -> It is used to inject the created object in your class. ( Dependency Injection ) and this vary as Field, Setter , Contructor Injection.
+
+5. @Bean
+    -> It is used in Soring FW to declare the object as Bean with name specifier and we can use in contexy object to get the instance of bean.
+
+6. @Primary
+    -> When we have 2 implementations of a interface/classes and when using Autowired on the super class, spring dont know which needs to be considered. So, @Primary
+annotation is used in one impl classes so that it always prefers to that instance when injected. If we neeed to use other one, then @Qualifier will be helpful.
+
+7. @Qualifier
+    -> When we put @Primary to a implemented class, and what if we need another one implementation. Here this annotation is used with @Autowired annotations that will
+override the primary annotation and gives u what u needed. Ex : @Qualifier("<Class_name_of_implemented_class OR the_name_u_put_in_component_annotation>") 
+8. @Configuration
+    -> It declares the class as a configuration class and use this class as a startign point to create obj in container. So with @ComponentScan annotation, we can
+specify what are the objects needs to be created in container. Ex : @ComponentScan("PKG_NAME");
+
+9. @Scope
+    -> It declares the object needs to be in which scope. By default it works in singleton and what if we need different objects when calling context.getBean(), so 
+we have to declare scope as @Scope("prototype"). There are 6 scopes. ( singleton , prototype , request , session , Application , WebSocket )
+  Ref : https://docs.spring.io/spring-framework/reference/core/beans/factory-scopes.html
+
+10. @Value
+    -> We can use above the field to inject some values to that variable.
+
+11.  @SpringBootApplication
+    -> We can declare the current class as a spring boot application. It enabled u auto configuration of components,component scanning , container.
+
+12. 
