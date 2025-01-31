@@ -20,10 +20,13 @@ annotation is used in one impl classes so that it always prefers to that instanc
 
 7. @Qualifier
     -> When we put @Primary to a implemented class, and what if we need another one implementation. Here this annotation is used with @Autowired annotations that will
-override the primary annotation and gives u what u needed. Ex : @Qualifier("<Class_name_of_implemented_class OR the_name_u_put_in_component_annotation>") 
+override the primary annotation and gives u what u needed. 
+Ex : @Qualifier("<Class_name_of_implemented_class OR the_name_u_put_in_component_annotation>") 
+
 8. @Configuration
     -> It declares the class as a configuration class and use this class as a startign point to create obj in container. So with @ComponentScan annotation, we can
-specify what are the objects needs to be created in container. Ex : @ComponentScan("PKG_NAME");
+specify what are the objects needs to be created in container. 
+Ex : @ComponentScan("PKG_NAME");
 
 9. @Scope
     -> It declares the object needs to be in which scope. By default it works in singleton and what if we need different objects when calling context.getBean(), so 
@@ -36,4 +39,10 @@ we have to declare scope as @Scope("prototype"). There are 6 scopes. ( singleton
 11.  @SpringBootApplication
     -> We can declare the current class as a spring boot application. It enabled u auto configuration of components,component scanning , container.
 
-12. 
+12. @RequestMapping
+    -> We can give this @RequestMapping above to the method and we can route the url to this method and we can return some data to which the view needs to be shown to client. 
+Ex : @RequestMapping("/api/v1/getData")
+
+13. @RequestParam
+    -> With RequestParam annotation, we can get the required data from the front end FORMS and we can process our logics here. We can also use @ModelAttribute annotations to map all the datas to the object class.
+
