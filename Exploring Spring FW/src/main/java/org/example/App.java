@@ -23,7 +23,7 @@ public class App
         obj.doWork();
         System.out.println("-----------------------------------------");
 
-        // We specified prototype in bean tag. so it creates new object for employee class & sets name to Karthick
+        // We specified prototype in bean tag. so it creates new object for employee class & sets name to Sundararaj
         Employee obj2 = context.getBean("empObj2",Employee.class);
         System.out.println(obj2.getName());
         System.out.println(obj2.getAge());
