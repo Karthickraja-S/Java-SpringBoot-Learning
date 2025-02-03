@@ -46,3 +46,12 @@ Ex : @RequestMapping("/api/v1/getData")
 13. @RequestParam
     -> With RequestParam annotation, we can get the required data from the front end FORMS and we can process our logics here. We can also use @ModelAttribute annotations to map all the datas to the object class.
 
+14. GetMapping , PostMapping , DeleteMapping , PutMapping - Used to defing HTTP Methods for the controller urls. In addition to this we can specify consumes,
+produces with specific type only. 
+Ex : @GetMapping( path = {"/","/home"} , consumes = {"application/json"} , produces = {"application/json"} )
+
+15. @RequestBody 
+    To accept a json and need to map to a POJO class, we have to use request body.
+
+16. @ResponseBody
+    To override a method saying that returning is not a view and it is a data in @Controller classes , we have to use @ResponseBody so that i returns a raw data.
