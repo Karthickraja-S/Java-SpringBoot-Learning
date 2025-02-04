@@ -1,18 +1,18 @@
-1. SpringHello 
+1. SpringHello  <br>
 	-> Learned a helloworld application in SpringBoot Application. <br>
 	-> Dependency Injection , Inversion Of Control ( Object creation using annotations )
 	
-2. Exploring Spring FW
+2. Exploring Spring FW  <br>
 	-> Understood the difference of spring vs springBoot so what are the configurations that has
 	been doing automaticaly by springBoot. <br>
 	-> Learned how XML configurations works in object creations, ApplicationContext ,
 	annotation based && XML Based object creations, scopes of objects.
 	
-3. H2TutorialJDBC 
+3. H2TutorialJDBC  <br>
 	-> Understood how to create a inMemory DB using H2 Database, creation of Model , Repository,
 	Service and doing CRUD operations with JdbcTemplate. ( RowMapper impl )
 	
-4. SpringWebIntro
+4. SpringWebIntro <br>
 	-> Learned how to create a web app using controller annotation and how to receive data from
 	a jsp form and how to assign those to the controller class via different format ( receiving
 	via request , directly via object using @ModelAttribute .. ) <br>
@@ -20,7 +20,7 @@
 	-> Learned about Model , ModelAndView , @RequestMapping , @Controller , Assigning view name
 	in application.properties
 	
-5. SpringBootAppDBIntro
+5. SpringBootAppDBIntro <br>
 	-> Learned how to create a  RESTApi project that acts only as a backend service and returns
 	data to the client using @RestController annotation   <br>
 	-> Connecting to Real Database , accepting data as a JSON Format from client for 
