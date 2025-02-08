@@ -30,4 +30,8 @@
    	-> Learned how ORM tools works with Java Persistence API by using @Entity , @Table annotations, 
     how to fire a query to DB with object mapping to realtime DB access. 
     -> This includes react UI also so that the client uses the API and get data, show to the users.
+
+## SpringBootAppWithJPA_V2 <br>
+	-> Worked with uploading files to the server with MultiPartFile class and uploaded to DB. 
+ 	-> Learned how to throw custom exceptions and handling effectively so that we can return to client with actual error details in server.
    	
