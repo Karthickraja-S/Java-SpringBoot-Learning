@@ -34,4 +34,6 @@
 ## SpringBootAppWithJPA_V2 <br>
 	-> Worked with uploading files to the server with **MultiPartFile** class and uploaded to DB. 
  	-> Learned how to throw **custom exceptions** and handling effectively so that we can return to client with actual error details in server.
-   	
+## SpringBootAOPBasics <br>
+	-> Learned How AOP concept works in spring. Executed @Before , @After , @AfterThrowing , @Around ( with manipulating inputs / rejecting inputs )
+ 	-> Learned about the real time usecase in applications. ( Monitoring , validation part , tracking & logging purpose )
