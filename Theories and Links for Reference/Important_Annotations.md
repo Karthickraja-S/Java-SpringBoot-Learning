@@ -77,3 +77,13 @@ we have to use @ResponseBody so that i returns a raw data.
 ```
 This is used to split our form inputs to further objects OR file upload.
 ```
+### @ControllerAdvice
+```
+This is used to specify the current class is used to handle exceptions that is thrown from webserver classes.
+Ref : https://www.baeldung.com/exception-handling-for-rest-with-spring
+```
+### @ExceptionHandler
+```
+Exception Handler annotation is used to handle specific exceptions and will merge the execution to the annoted method.
+Ex :     @ExceptionHandler({ AccessDeniedException.class })
+```
