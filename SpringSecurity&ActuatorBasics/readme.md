@@ -1,6 +1,6 @@
 <u> Spring security Introduction </u>
 
-1. If you integrate spring-web dependency in pom.xml , my default it will block all the request and ask for Login credentials.
+1. If you integrate spring-web dependency in pom.xml , by default it will block all the request and ask for Login credentials.
 <br> Also, it will give you a default password in the spring starting application console.
 
 ### How to override default username & password
