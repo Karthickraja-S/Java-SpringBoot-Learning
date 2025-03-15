@@ -38,5 +38,10 @@
 	-> Learned How AOP concept works in spring. Executed @Before , @After , @AfterThrowing , @Around ( with manipulating inputs / rejecting inputs )
  	-> Learned about the real time usecase in applications. ( Monitoring , validation part , tracking & logging purpose )
 ## Spring Security & Actuator
-
+	-> Refer readme.md inside the project.
+ 	-> SImply Actuator helps us to monitor spring projects like memory management, CPU, DISK monitoring, Bean status, etc., ( used for monitoring purpose like creating dump of threads )
+  	-> Spring Security Can be used to secure API's , adding extra filters, user/role based API access , etc., 
 ## Spring Security with JWT
+	-> JWT ( Json Web Tokens ) used to generate a token when we try to login , and all the API uses this generated token , to hit the RESTAPI's to access the resource, thus maintaining a STATELESS application
+## SpringBootOauth2Learning
+	-> Include OAUTH2 library, do some configurations in SecurityFilterChain Bean in config classes, and generate client secret and client ID w.r.to client applications, and you can login with that account.
